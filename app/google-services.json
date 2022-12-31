@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "752016629177",
+    "firebase_url": "https://coursemanagement-da95e-default-rtdb.firebaseio.com",
+    "project_id": "coursemanagement-da95e",
+    "storage_bucket": "coursemanagement-da95e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752016629177:android:e1912eaa48a616617b2a68",
+        "android_client_info": {
+          "package_name": "com.example.cengonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752016629177-hgq8eslvqd26fcdb99tithp5culh4784.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC20ePqFdOPAw6nrf25AD2H9bnI-sq8hbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752016629177-hgq8eslvqd26fcdb99tithp5culh4784.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
