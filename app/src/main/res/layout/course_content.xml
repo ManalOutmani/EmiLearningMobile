@@ -121,7 +121,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="support du cours"
-                        android:drawableLeft="@drawable/ic_baseline_download_24"
                         android:textColor="@color/cardview_light_background"
                         android:textStyle="bold"
                         android:background="@null"/>
