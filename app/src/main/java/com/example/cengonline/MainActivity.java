@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                                         dataSnapshot2.hasChild(currentUser.getUid()))
                                 {
                                     courseList.add(course);
-                                    courseAdapter.notifyDataSetChanged(); ////anında değişiklikleri yansıtsın diye.
+                                    courseAdapter.notifyDataSetChanged(); ////pour refléter les changements immédiats.
                                 }
 
                             }
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }
-                courseAdapter.notifyDataSetChanged(); ////anında değişiklikleri yansıtsın diye.
+                courseAdapter.notifyDataSetChanged(); ////pour refléter les changements immédiats.
 
             }
 
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
         });
         dialog.show();
     }
-//eğer student doğru kodu girdiyse, studentin ders bilgilerini database'e atılır.
+//si l'étudiant a saisi le bon code, les informations sur le cours de l'étudiant seront saisies dans la base de données..
     private void readCourseCodeFromDb(final String codeInput)
     {
 
@@ -268,18 +268,14 @@ public class MainActivity extends AppCompatActivity {
                                 studentListRef.child(currentUser.getUid()).setValue(hashMap);
                             }
 
-
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
-
                             }
                         });
                     }
-
-
                 }
                 if(countIfCourseCode==0)
-                    Toast.makeText(MainActivity.this, "Please enter a valid code.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "veuillez saisir le code valide.", Toast.LENGTH_LONG).show();
             }
 
             @Override

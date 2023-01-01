@@ -41,6 +41,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
     public PostAdapter(Context mContext, List<Post> postList) {
         this.mContext = mContext;
         this.postList = postList;
+        System.out.println("here is the post list"+postList);
 
     }
 
@@ -63,6 +64,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
         auth = FirebaseAuth.getInstance();
         currentFirebaseUser = auth.getCurrentUser();
         final Post post = postList.get(position);
+        System.out.println("here it is "+post.getPostText());
         holder.txtPost.setText(post.getPostText());
         holder.postType.setText(post.getPostType().toLowerCase());
 
