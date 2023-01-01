@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_announcements.xml" value="0.1234375" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_assignments.xml" value="0.1234375" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_chat.xml" value="0.13229166666666667" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_comment.xml" value="0.13229166666666667" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_messages.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_pdf.xml" value="0.11277173913043478" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_pdfactivity.xml" value="0.1" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_post.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_profile.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_register.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_start_screen.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/assignment_content.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/comment_content.xml" value="0.1234375" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/course_content.xml" value="0.30293159609120524" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/create_dialog.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/post_content.xml" value="0.6" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

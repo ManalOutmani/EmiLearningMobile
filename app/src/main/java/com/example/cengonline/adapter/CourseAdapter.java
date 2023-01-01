@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import com.example.cengonline.R;
 import com.example.cengonline.course.CreateAssignmentDialog;
 import com.example.cengonline.model.Course;
 import com.example.cengonline.model.User;
+import com.example.cengonline.pdf;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -78,6 +80,18 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
                 mContext.startActivity(intent);
             }
         });
+        holder.pdfButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(v.getContext(), pdf.class);
+                i.putExtra("title",course.getCourseName());
+                i.putExtra("product",course.getCourseName());
+                i.putExtra("link",course.getLink());
+                mContext.startActivity(i);
+
+            }
+        });
 
         DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
         userRef.addValueEventListener(new ValueEventListener() {
@@ -112,6 +126,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView courseName, coursePeriod, courseTeacher, editCourse, createAssignment, courseIdInvisible ;
+        private Button pdfButton;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -122,6 +137,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
             editCourse = itemView.findViewById(R.id.content_editCourse);
             createAssignment = itemView.findViewById(R.id.content_createAssignment);
             courseIdInvisible = itemView.findViewById(R.id.content_courseId);
+            pdfButton=itemView.findViewById(R.id.btnpdf);
 
         }
     }

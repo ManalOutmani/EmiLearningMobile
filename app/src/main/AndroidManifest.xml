@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".CommentActivity"></activity>
+        <activity android:name=".pdf"></activity>
+        <activity android:name=".CommentActivity" />
         <activity android:name=".PostActivity" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".AnnouncementsActivity" />
         <activity android:name=".MessagesActivity" />
-
         <activity android:name=".AssignmentsActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".login.RegisterActivity" />

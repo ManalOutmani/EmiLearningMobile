@@ -75,6 +75,13 @@
         android:visibility="gone"
 
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnpdf"
+        android:text="voir support du cours"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"/>
 
 
 

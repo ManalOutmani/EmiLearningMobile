@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Please fill all the fields.", Toast.LENGTH_LONG).show();
                 }
                 else{
-                    //email ve password girildi. doğru mu yanlış mı kontrolü sağlanacak.
+
                     auth.signInWithEmailAndPassword(mail,pass)
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -86,14 +86,14 @@ public class LoginActivity extends AppCompatActivity {
 
                                             @Override
                                             public void onCancelled(@NonNull DatabaseError databaseError) {
-                                            //pb.dismis
+
                                             }
                                         });
 
                                     }
 
                                     else{
-                                        //pb.Dismis
+
                                         Toast.makeText(LoginActivity.this, "Login failed", Toast.LENGTH_LONG).show();
                                     }
 
