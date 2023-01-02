@@ -43,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.login_btn_login);
         auth = FirebaseAuth.getInstance();
 
-        register = findViewById(R.id.login_txt_reg);
 
 
 

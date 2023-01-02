@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MessagesActivity">
+    tools:context=".MessagesActivity"
+    android:background="@drawable/background">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/bar"
@@ -23,31 +24,19 @@
                 android:layout_height="wrap_content"
                 >
 
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ceng_online_logo"
-                    android:scaleType="centerCrop"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:paddingBottom="12dp"/>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:id="@+id/linearSlogan"
-                    android:layout_marginLeft="55dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="55dp">
+                    android:layout_centerVertical="true">
 
 
                     <TextView
                         android:id="@+id/slogan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CENG"
+                        android:text="EMI_LEARNING"
                         android:textColor="@color/colorBlue"
                         android:textSize="30sp"
                         />
@@ -56,7 +45,6 @@
                         android:id="@+id/slogan2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Online"
                         android:textColor="@color/colorRed"
                         android:textSize="30sp"
                         />
@@ -78,10 +66,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_searchUser"
-        android:layout_below="@+id/toolbar_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_below="@+id/toolbar_line"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -89,7 +82,7 @@
         android:id="@+id/main_bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/colorPrimary"
+        android:background="@drawable/topcornersround"
         app:itemTextColor="@drawable/selector"
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/bottom_nav"

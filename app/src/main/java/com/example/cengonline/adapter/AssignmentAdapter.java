@@ -100,7 +100,43 @@ public class AssignmentAdapter extends RecyclerView.Adapter<AssignmentAdapter.Vi
             }
         });
 
+        holder.showAssignment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
 
+                DatabaseReference uploadRef = FirebaseDatabase.getInstance().getReference("UploadAssignments")
+                        .child(currentUser.getUid());
+
+
+                uploadRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+
+                            UploadAssignment uploadAssignment = snapshot.getValue(UploadAssignment.class);
+                            assert uploadAssignment != null;
+                            showAnswer = uploadAssignment.getUploadAssignment();
+                        }
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+                builder.setTitle("Your answer")
+                        .setMessage(showAnswer)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+
+                builder.show();
+            }
+        });
 
 
 
@@ -125,7 +161,6 @@ public class AssignmentAdapter extends RecyclerView.Adapter<AssignmentAdapter.Vi
             date = itemView.findViewById(R.id.content_assignment_date);
             courseId = itemView.findViewById(R.id.content_assignment_courseId);
             writeAnswerAssignment = itemView.findViewById(R.id.assignment_write_answer_button);
-
         }
     }
 }
