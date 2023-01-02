@@ -1,11 +1,11 @@
-package com.example.cengonline.profile;
+package com.example.emiLearning.profile;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cengonline.login.LoginActivity;
+import com.example.emiLearning.login.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LogoutActivity extends AppCompatActivity {

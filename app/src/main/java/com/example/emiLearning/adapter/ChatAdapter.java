@@ -1,4 +1,4 @@
-package com.example.cengonline.adapter;
+package com.example.emiLearning.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,17 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.example.cengonline.R;
-import com.example.cengonline.model.Chat;
-import com.example.cengonline.model.User;
+import com.example.emiLearning.R;
+import com.example.emiLearning.model.Chat;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 

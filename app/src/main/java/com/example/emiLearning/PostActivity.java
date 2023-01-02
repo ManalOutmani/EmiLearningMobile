@@ -1,4 +1,4 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,10 +11,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import com.example.cengonline.adapter.AssignmentAdapter;
-import com.example.cengonline.adapter.PostAdapter;
-import com.example.cengonline.model.Assignment;
-import com.example.cengonline.model.Post;
+import com.example.emiLearning.adapter.PostAdapter;
+import com.example.emiLearning.model.Post;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;

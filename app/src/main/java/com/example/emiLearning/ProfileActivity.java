@@ -1,4 +1,4 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.cengonline.profile.LogoutActivity;
+import com.example.emiLearning.profile.LogoutActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileActivity extends AppCompatActivity {

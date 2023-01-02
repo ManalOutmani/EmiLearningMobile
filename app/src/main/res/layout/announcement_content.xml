@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/an_courseName"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorBlue"
             android:textAppearance="?android:attr/textAppearanceSmall"
 
             />

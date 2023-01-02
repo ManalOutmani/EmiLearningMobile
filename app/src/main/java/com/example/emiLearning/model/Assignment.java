@@ -1,4 +1,4 @@
-package com.example.cengonline.model;
+package com.example.emiLearning.model;
 
 public class Assignment {
     private String assignmentId, assignmentInfoText, assignmentDate, courseId, courseName;

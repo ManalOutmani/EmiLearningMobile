@@ -1,4 +1,4 @@
-package com.example.cengonline.login;
+package com.example.emiLearning.login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.cengonline.MainActivity;
-import com.example.cengonline.R;
+import com.example.emiLearning.MainActivity;
+import com.example.emiLearning.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

@@ -1,4 +1,4 @@
-package com.example.cengonline.adapter;
+package com.example.emiLearning.adapter;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,21 +13,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cengonline.R;
+import com.example.emiLearning.R;
 
-import com.example.cengonline.model.Assignment;
-import com.example.cengonline.model.Course;
-import com.example.cengonline.model.UploadAssignment;
+import com.example.emiLearning.model.Assignment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.List;

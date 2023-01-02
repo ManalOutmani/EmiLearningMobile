@@ -1,4 +1,4 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -19,14 +19,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.cengonline.adapter.CourseAdapter;
+import com.example.emiLearning.adapter.CourseAdapter;
 
-import com.example.cengonline.model.Course;
-import com.example.cengonline.model.StudentListOfTheCourses;
-import com.example.cengonline.model.User;
+import com.example.emiLearning.model.Course;
+import com.example.emiLearning.model.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -38,7 +35,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 

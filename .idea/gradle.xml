@@ -10,10 +10,11 @@
         <option name="gradleJvm" value="Embedded JDK" />
         <option name="modules">
           <set>
-            <option value="/private/var/root/StudioProjects/CoursesForStudent" />
-            <option value="/private/var/root/StudioProjects/CoursesForStudent/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

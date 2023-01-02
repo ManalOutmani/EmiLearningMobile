@@ -1,8 +1,7 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,9 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.cengonline.adapter.ChatAdapter;
-import com.example.cengonline.model.Chat;
-import com.example.cengonline.model.User;
+import com.example.emiLearning.adapter.ChatAdapter;
+import com.example.emiLearning.model.Chat;
+import com.example.emiLearning.model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;

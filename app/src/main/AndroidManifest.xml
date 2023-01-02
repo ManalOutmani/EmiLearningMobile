@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.cengonline">
+    package="com.example.emiLearning">
 
     <application
         android:allowBackup="true"
@@ -12,25 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".pdf"></activity>
-        <activity android:name=".CommentActivity" />
-        <activity android:name=".PostActivity" />
-        <activity android:name=".ChatActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".AnnouncementsActivity" />
-        <activity android:name=".MessagesActivity" />
-        <activity android:name=".AssignmentsActivity" />
+        <activity android:name="com.example.emiLearning.pdf"></activity>
+        <activity android:name="com.example.emiLearning.CommentActivity" />
+        <activity android:name="com.example.emiLearning.PostActivity" />
+        <activity android:name="com.example.emiLearning.ChatActivity" />
+        <activity android:name="com.example.emiLearning.ProfileActivity" />
+        <activity android:name="com.example.emiLearning.AnnouncementsActivity" />
+        <activity android:name="com.example.emiLearning.MessagesActivity" />
+        <activity android:name="com.example.emiLearning.AssignmentsActivity" />
 
 
-        <activity android:name=".profile.LogoutActivity" />
-        <activity android:name=".login.LoginActivity">
+        <activity android:name="com.example.emiLearning.profile.LogoutActivity" />
+        <activity android:name="com.example.emiLearning.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.emiLearning.MainActivity" />
     </application>
 
 </manifest>

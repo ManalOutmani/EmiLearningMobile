@@ -1,4 +1,4 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import org.junit.Test;
 

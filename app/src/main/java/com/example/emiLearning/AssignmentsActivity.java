@@ -1,4 +1,4 @@
-package com.example.cengonline;
+package com.example.emiLearning;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,18 +11,11 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.cengonline.adapter.AssignmentAdapter;
-import com.example.cengonline.adapter.CourseAdapter;
+import com.example.emiLearning.adapter.AssignmentAdapter;
 
-import com.example.cengonline.model.Announcement;
-import com.example.cengonline.model.Assignment;
-import com.example.cengonline.model.Course;
-import com.example.cengonline.model.StudentListOfTheCourses;
-import com.example.cengonline.model.User;
+import com.example.emiLearning.model.Assignment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
