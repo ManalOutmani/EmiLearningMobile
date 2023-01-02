@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/background"
     >
 
     <LinearLayout
@@ -25,7 +26,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/usericon"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -50,7 +51,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:textColor="@color/colorBlue"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -93,7 +94,7 @@
                         android:layout_marginTop="0dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="23 Ocak 2019"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorBlue"
                         android:textStyle="bold"
 
                         />

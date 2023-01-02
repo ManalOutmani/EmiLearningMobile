@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/nav_courses"
-        android:title="Courses"
+        android:title="Cours"
         android:icon="@drawable/ic_home"
 
         />
     <item
         android:id="@+id/nav_assignments"
-        android:title="Assignments"
+        android:title="Devoirs"
         android:icon="@drawable/ic_assignment_black_24dp"
         />
     <item
@@ -20,12 +20,12 @@
         />
     <item
         android:id="@+id/nav_announcements"
-        android:title="Announcements"
+        android:title="Notifications"
         android:icon="@drawable/ic_announcements"
         />
     <item
         android:id="@+id/nav_profile"
-        android:title="Profile"
+        android:title="Profil"
         android:icon="@drawable/ic_profile"
         />
 

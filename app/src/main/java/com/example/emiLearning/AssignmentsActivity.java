@@ -59,6 +59,19 @@ public class AssignmentsActivity extends AppCompatActivity {
         //Switch to other pages
         switchPage();
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
+<<<<<<< HEAD:app/src/main/java/com/example/emiLearning/AssignmentsActivity.java
+=======
+        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            User user = dataSnapshot.getValue(User.class);
+            if(user.getType().equals("Student"))
+            {
+                createAssignment.setVisibility(View.GONE);
+            }
+            }
+>>>>>>> 1a84f94bf69dce02b7f996c0ff33727e2195bb2b:app/src/main/java/com/example/cengonline/AssignmentsActivity.java
 
 //        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
 //        databaseReference.addValueEventListener(new ValueEventListener() {

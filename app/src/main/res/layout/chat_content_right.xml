@@ -3,7 +3,8 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="@drawable/background">
 
 <TextView
     android:layout_width="wrap_content"
@@ -11,8 +12,9 @@
     android:id="@+id/date_chat_item"
     android:text="Date"
     android:textSize="16sp"
+    android:textStyle="bold"
     android:layout_centerHorizontal="true"
-    android:background="@color/colorDivider"
+    android:background="@null"
     android:padding="10dp"
     android:layout_marginBottom="10dp"/>
 
@@ -30,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/colorRightMessageBack"
+        android:background="@drawable/roundcorners"
         android:layout_gravity="end"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -42,10 +44,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_chat_item"
             android:maxLines="10"
-            android:text="deneme"
+            android:text="mon message"
             android:textSize="16sp"
             android:layout_gravity="end"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -53,7 +55,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/time_chat_item"
             android:layout_gravity="end"
-            android:text="saat"
+            android:textColor="@color/cardview_light_background"
+            android:text="status"
             />
         </LinearLayout>
     </LinearLayout>
