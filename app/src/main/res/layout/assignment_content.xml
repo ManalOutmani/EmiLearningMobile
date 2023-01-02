@@ -50,13 +50,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
 
-    <Button
-        android:id="@+id/show_assignment_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click twice for the answer to your homework."
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_margin="5dp"
-        />
+
 
 </LinearLayout>

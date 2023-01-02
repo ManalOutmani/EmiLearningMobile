@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cengonline.PostActivity;
 import com.example.cengonline.R;
-import com.example.cengonline.course.CreateAssignmentDialog;
+
 import com.example.cengonline.model.Course;
 import com.example.cengonline.model.User;
 import com.example.cengonline.pdf;
@@ -60,26 +60,19 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         holder.coursePeriod.setText(course.getCoursePeriod());
         holder.courseTeacher.setText(course.getCourseTeacherName());
         holder.courseIdInvisible.setText(course.getCourseId());
-        holder.createAssignment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CreateAssignmentDialog createCourseDialog = new CreateAssignmentDialog(holder.courseIdInvisible.getText().toString(),
-                        holder.courseName.getText().toString());
-                createCourseDialog.show(((AppCompatActivity) mContext).getSupportFragmentManager(),"Create Assignment");
-            }
-        });
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(mContext, PostActivity.class);
-                intent.putExtra("courseId",course.getCourseId());
-                intent.putExtra("courseName",course.getCourseName());
-                intent.putExtra("coursePeriod",course.getCoursePeriod());
-                intent.putExtra("courseTeacherName",course.getCourseTeacherName());
-                mContext.startActivity(intent);
-            }
-        });
+
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(mContext, PostActivity.class);
+//                intent.putExtra("courseId",course.getCourseId());
+//                intent.putExtra("courseName",course.getCourseName());
+//                intent.putExtra("coursePeriod",course.getCoursePeriod());
+//                intent.putExtra("courseTeacherName",course.getCourseTeacherName());
+//                mContext.startActivity(intent);
+//            }
+//        });
         holder.pdfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

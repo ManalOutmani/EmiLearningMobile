@@ -34,6 +34,8 @@ public class AnnouncementsActivity extends AppCompatActivity {
    FirebaseUser currentUser;
    private AnnouncementAdapter announcementAdapter;
    private List<Announcement> announcementList;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

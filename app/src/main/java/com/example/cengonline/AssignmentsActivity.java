@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.example.cengonline.adapter.AssignmentAdapter;
 import com.example.cengonline.adapter.CourseAdapter;
-import com.example.cengonline.course.CreateAssignmentDialog;
+
 import com.example.cengonline.model.Announcement;
 import com.example.cengonline.model.Assignment;
 import com.example.cengonline.model.Course;

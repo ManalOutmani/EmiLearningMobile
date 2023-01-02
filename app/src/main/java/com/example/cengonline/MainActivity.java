@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cengonline.adapter.CourseAdapter;
-import com.example.cengonline.course.CreateCourseDialog;
+
 import com.example.cengonline.model.Course;
 import com.example.cengonline.model.StudentListOfTheCourses;
 import com.example.cengonline.model.User;
@@ -88,21 +88,12 @@ public class MainActivity extends AppCompatActivity {
 
         switchPage();
 
-        txtCreateCourse = findViewById(R.id.txt_createCourse);
+
         txtJoinCourse = findViewById(R.id.txt_joinCourse);
 
         readUserType();
 
-        txtCreateCourse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                openCourseDialog();
-
-            }
-
-
-        });
         txtJoinCourse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,13 +119,9 @@ public class MainActivity extends AppCompatActivity {
                 if(user.getType().equals("Student"))
                 {
                 txtJoinCourse.setVisibility(View.VISIBLE);
-                txtCreateCourse.setVisibility(View.INVISIBLE);
+
                 }
-                else if(user.getType().equals("Teacher"))
-                {
-                    txtJoinCourse.setVisibility(View.INVISIBLE);
-                    txtCreateCourse.setVisibility(View.VISIBLE);
-                }
+
 
             }
 
@@ -147,11 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void openCourseDialog()
-    {
-        CreateCourseDialog createCourseDialog = new CreateCourseDialog();
-        createCourseDialog.show(getSupportFragmentManager(),"Create Course");
-    }
+
 
     private void readCourses()
     {
@@ -207,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
     private void openJoinCourseDialog()
     {
         AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-        dialog.setTitle("Find out the class code from your teacher and enter it here.");
+        dialog.setTitle("Demandez le code de la matiére à votre professeur et saisissez-le ici..");
         final EditText codeInput = new EditText(MainActivity.this);
         codeInput.setInputType(InputType.TYPE_CLASS_TEXT);
         dialog.setView(codeInput);
@@ -219,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 readCourseCodeFromDb(codeText);
             }
         });
-        dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        dialog.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {
                 dialogInterface.dismiss();

@@ -37,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         email = findViewById(R.id.login_edit_email);
         password = findViewById(R.id.login_edit_password);
         btnLogin = findViewById(R.id.login_btn_login);
@@ -44,13 +45,7 @@ public class LoginActivity extends AppCompatActivity {
 
         register = findViewById(R.id.login_txt_reg);
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

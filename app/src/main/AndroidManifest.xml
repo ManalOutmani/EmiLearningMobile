@@ -20,10 +20,10 @@
         <activity android:name=".AnnouncementsActivity" />
         <activity android:name=".MessagesActivity" />
         <activity android:name=".AssignmentsActivity" />
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".login.RegisterActivity" />
+
+
         <activity android:name=".profile.LogoutActivity" />
-        <activity android:name=".login.StartScreenActivity">
+        <activity android:name=".login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

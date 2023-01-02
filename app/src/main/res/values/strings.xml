@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CENGOnline</string>
+    <string name="app_name">EMI-learning</string>
     <string name="student">Student</string>
     <string name="teacher">Teacher</string>
     <string name="name_and_surname">Name and Surname</string>

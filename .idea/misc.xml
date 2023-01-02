@@ -17,11 +17,15 @@
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_profile.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_register.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/activity_start_screen.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/announcement_content.xml" value="0.1796875" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/assignment_content.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/chat_content_right.xml" value="0.1796875" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/comment_content.xml" value="0.1234375" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/course_content.xml" value="0.30293159609120524" />
-        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/create_dialog.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/create_dialog.xml" value="0.5" />
         <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/post_content.xml" value="0.6" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/layout/user_content.xml" value="0.1796875" />
+        <entry key="..\:/Users/asus/Desktop/S5/mobile-apps/cengonline-course-management-system-main/app/src/main/res/menu/bottom_nav.xml" value="0.4466666666666667" />
       </map>
     </option>
   </component>
