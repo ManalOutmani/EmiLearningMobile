@@ -66,7 +66,6 @@ public class AssignmentsActivity extends AppCompatActivity {
         //Switch to other pages
         switchPage();
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        createAssignment = findViewById(R.id.txt_createAssignment);
         DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
