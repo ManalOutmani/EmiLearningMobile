@@ -62,17 +62,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         holder.courseIdInvisible.setText(course.getCourseId());
 
 
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(mContext, PostActivity.class);
-//                intent.putExtra("courseId",course.getCourseId());
-//                intent.putExtra("courseName",course.getCourseName());
-//                intent.putExtra("coursePeriod",course.getCoursePeriod());
-//                intent.putExtra("courseTeacherName",course.getCourseTeacherName());
-//                mContext.startActivity(intent);
-//            }
-//        });
+//
         holder.pdfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,28 +76,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
             }
         });
 
-        DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
-        userRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                User user = dataSnapshot.getValue(User.class);
-                if(user.getType().equals("Teacher")){
-                    holder.createAssignment.setVisibility(View.VISIBLE);
-                    holder.editCourse.setVisibility(View.VISIBLE);
-                }
-                else{
-                    holder.createAssignment.setVisibility(View.GONE);
-                    holder.editCourse.setVisibility(View.GONE);
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
     }
 

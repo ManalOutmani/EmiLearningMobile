@@ -36,21 +36,21 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     @NonNull
     @Override
     public UserAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        //user_content layoutu view tuttuk.
+
         View view = LayoutInflater.from(mContext).inflate(R.layout.user_content,parent,false);
         item="";
-        //ViewHolder ile bu görsel layout'u (viewi) return ediyoruz.
+
         return new UserAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
-    //veriler databaseden alınır bu methodda ve ekrana yazdırılır.
+
 
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         final User user = userList.get(position);
         holder.txtUserName.setText(user.getNameSurname());
-        Glide.with(mContext).load(user.getPictureUrl()).into(holder.imgProfilePic); //veritabanından profil resmini çağırıp, sayfaya(layout içeren view'a ekledik)
+        Glide.with(mContext).load(user.getPictureUrl()).into(holder.imgProfilePic);
       /*  holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +71,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 mContext.startActivity(intent);
             }
         });
-        //Kişi kendisini listede gördüğünde kendisine mesaj atmasını engellemek için.
+
         if(user.getId().equals(currentUser.getUid()))
         {
             holder.btnMessage.setVisibility(View.INVISIBLE);

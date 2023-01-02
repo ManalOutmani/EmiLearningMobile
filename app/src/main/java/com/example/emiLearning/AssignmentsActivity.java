@@ -66,29 +66,24 @@ public class AssignmentsActivity extends AppCompatActivity {
         //Switch to other pages
         switchPage();
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        createAssignment = findViewById(R.id.txt_createAssignment);
-        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-            User user = dataSnapshot.getValue(User.class);
-            if(user.getType().equals("Student"))
-            {
-                createAssignment.setVisibility(View.GONE);
-            }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+//        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference("Users").child(currentUser.getUid());
+//        databaseReference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//            User user = dataSnapshot.getValue(User.class);
+//            if(user.getType().equals("Student"))
+//            {
+//                createAssignment.setVisibility(View.GONE);
+//            }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
 
-            }
-        });
-        createAssignment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAssignmentDialog();
-            }
-        });
 
 
 

@@ -36,7 +36,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        if(getSupportActionBar()!=null)
+            getSupportActionBar().hide();
 
         email = findViewById(R.id.login_edit_email);
         password = findViewById(R.id.login_edit_password);
@@ -50,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //progrss bar
+
 
                 String mail = email.getText().toString();
                 String pass = password.getText().toString();

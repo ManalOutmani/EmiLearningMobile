@@ -60,17 +60,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         holder.timeItem.setText(chat.getCurrentTime());
 
 
-     /*   if(position!=getItemCount()-1 && chatList.get(position).getCurrentDate().equals(chatList.get(position-1).getCurrentDate()))
-        {
-            holder.dateItem.setVisibility(View.GONE);
-        }
 
-        if(position!=0 && !chatList.get(position).getCurrentDate().equals(chatList.get(position-1).getCurrentDate()))
-        {
-            holder.dateItem.setVisibility(View.VISIBLE);
-        holder.dateItem.setText(chat.getCurrentDate());
-    }
-        */
         if(position!=0)
         {
 
